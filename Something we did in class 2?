@@ -1,0 +1,16 @@
+# Branching
+age = 40
+'''
+# Using if statement
+if age >= 65:
+    print("Senior Citizen")
+else:
+    print("NOT SENIOR")
+'''
+
+
+# Using if/else statement
+if age == 65:
+    print("65 years")
+else:
+    print("NOT 65 years")
