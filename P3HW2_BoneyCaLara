@@ -1,0 +1,25 @@
+# CaLara Boney
+# 9/24/2024
+# P3HW2
+# Employee Database
+
+employee_name = input("Enter employee's name: " )
+hours_worked = int(input("Enter number of hour's worked: "))
+pay_rate = float(input("Enter employee's pay rate: "))
+print("-----------------------------------")
+print("Employee name: \t", employee_name)
+print(f"{'Hours Worked':<18} {'Pay Rate':<18} {'Overtime':<18} {'Overtime Pay':<18} {'RegHour Pay':<18} {'Gross Pay':<18}")
+print("-----------------------------------------------------------------------------------------------------------")
+
+if hours_worked > 40:
+    normal_pay = 40 * pay_rate
+    overtime_pay = (hours_worked - 40) * (pay_rate * 1.5)
+    overtime = hours_worked - 40
+    gross_pay = normal_pay + overtime_pay
+else: 
+    normal_pay = hours_worked * pay_rate
+    overtime_pay = 0
+    overtime = 0
+    gross_pay = normal_pay + overtime_pay
+
+print(f"{hours_worked:<18} ${pay_rate:<18.2f} {overtime:<18} ${overtime_pay:<18.2f} ${normal_pay:<18.2f} ${gross_pay:<18.2f}")
