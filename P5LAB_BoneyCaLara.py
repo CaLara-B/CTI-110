@@ -1,7 +1,7 @@
 #9/30/2024
 #CaLara Boney
 #P5LAB
-#Using integer division and if/else statements
+#Money Calculator/Self Checkout Coding
 
 import random
 
